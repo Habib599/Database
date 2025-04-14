@@ -111,658 +111,102 @@ WHERE e.department_id = d.department_id
 /* *************************************************************** 
 ***************************INSERTING DATA*************************
 **************************************************************** */
-INSERT INTO regions
-VALUES (
-	1,
-	'Europe'
-	);
-
-INSERT INTO regions
-VALUES (
-	2,
-	'Americas'
-	);
-
-INSERT INTO regions
-VALUES (
-	3,
-	'Asia'
-	);
-
-INSERT INTO regions
-VALUES (
-	4,
-	'Middle East and Africa'
-	);
+INSERT INTO regions VALUES 
+(1,'Europe'),
+(2,'Americas'),
+(3,'Asia'),
+(4,'Middle East and Africa');
 
 COMMIT;
 
-INSERT INTO countries
-VALUES (
-	'IT',
-	'Italy',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'JP',
-	'Japan',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'US',
-	'United States of America',
-	2
-	);
-
-INSERT INTO countries
-VALUES (
-	'CA',
-	'Canada',
-	2
-	);
-
-INSERT INTO countries
-VALUES (
-	'CN',
-	'China',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'IN',
-	'India',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'AU',
-	'Australia',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'ZW',
-	'Zimbabwe',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'SG',
-	'Singapore',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'UK',
-	'United Kingdom',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'FR',
-	'France',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'DE',
-	'Germany',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'ZM',
-	'Zambia',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'EG',
-	'Egypt',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'BR',
-	'Brazil',
-	2
-	);
-
-INSERT INTO countries
-VALUES (
-	'CH',
-	'Switzerland',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'NL',
-	'Netherlands',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'MX',
-	'Mexico',
-	2
-	);
-
-INSERT INTO countries
-VALUES (
-	'KW',
-	'Kuwait',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'IL',
-	'Israel',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'DK',
-	'Denmark',
-	1
-	);
-
-INSERT INTO countries
-VALUES (
-	'HK',
-	'HongKong',
-	3
-	);
-
-INSERT INTO countries
-VALUES (
-	'NG',
-	'Nigeria',
-	4
-	);
-
-INSERT INTO countries
-VALUES (
-	'AR',
-	'Argentina',
-	2
-	);
-
-INSERT INTO countries
-VALUES (
-	'BE',
-	'Belgium',
-	1
-	);
+INSERT INTO countries VALUES 
+('IT','Italy',1),
+('JP','Japan',3),
+('US','United States of America',2),
+('CA','Canada',2),
+('CN','China',3),
+('IN','India',3),
+('AU','Australia',3),
+('ZW','Zimbabwe',4),
+('SG','Singapore',3),
+('UK','United Kingdom',1),
+('FR','France',1),
+('DE','Germany',1),
+('ZM','Zambia',4),
+('EG','Egypt',4),
+('BR','Brazil',2),
+('CH','Switzerland',1),
+('NL','Netherlands',1),
+('MX','Mexico',2),
+('KW','Kuwait',4),
+('IL','Israel'4),
+('DK','Denmark',1),
+('HK','HongKong',3),
+('NG','Nigeria',4),
+('AR','Argentina',2),
+('BE','Belgium',1);
 
 COMMIT;
 
-INSERT INTO locations
-VALUES (
-	1000,
-	'1297 Via Cola di Rie',
-	'00989',
-	'Roma',
-	NULL,
-	'IT'
-	);
+INSERT INTO locations VALUES 
+(1000,'1297 Via Cola di Rie','00989','Roma',NULL,'IT'),
+(1100, '93091 Calle della Testa', '10934', 'Venice', NULL, 'IT'),
+(1200, '2017 Shinjuku-ku', '1689', 'Tokyo', 'Tokyo Prefecture', 'JP'),
+(1300, '9450 Kamiya-cho', '6823', 'Hiroshima', NULL, 'JP'),
+(1400, '2014 Jabberwocky Rd', '26192', 'Southlake', 'Texas', 'US'),
+(1500, '2011 Interiors Blvd', '99236', 'South San Francisco', 'California', 'US'),
+(1600, '2007 Zagora St', '50090', 'South Brunswick', 'New Jersey', 'US'),
+(1700, '2004 Charade Rd', '98199', 'Seattle', 'Washington', 'US'),
+(1800, '147 Spadina Ave', 'M5V 2L7', 'Toronto', 'Ontario', 'CA'),
+(1900, '6092 Boxwood St', 'YSW 9T2', 'Whitehorse', 'Yukon', 'CA'),
+(2000, '40-5-12 Laogianggen', '190518', 'Beijing', NULL, 'CN'),
+(2100, '1298 Vileparle (E)', '490231', 'Bombay', 'Maharashtra', 'IN'),
+(2200, '12-98 Victoria Street', '2901', 'Sydney', 'New South Wales', 'AU'),
+(2300, '198 Clementi North', '540198', 'Singapore', NULL, 'SG'),
+(2400, '8204 Arthur St', NULL, 'London', NULL, 'UK'),
+(2500, 'Magdalen Centre, The Oxford Science Park', 'OX9 9ZB', 'Oxford', 'Oxford', 'UK'),
+(2600, '9702 Chester Road', '09629850293', 'Stretford', 'Manchester', 'UK'),
+(2700, 'Schwanthalerstr. 7031', '80925', 'Munich', 'Bavaria', 'DE'),
+(2800, 'Rua Frei Caneca 1360 ', '01307-002', 'Sao Paulo', 'Sao Paulo', 'BR'),
+(2900, '20 Rue des Corps-Saints', '1730', 'Geneva', 'Geneve', 'CH'),
+(3000, 'Murtenstrasse 921', '3095', 'Bern', 'BE', 'CH'),
+(3100, 'Pieter Breughelstraat 837', '3029SK', 'Utrecht', 'Utrecht', 'NL'),
+(3200, 'Mariano Escobedo 9991', '11932', 'Mexico City', 'Distrito Federal,', 'MX');
 
-INSERT INTO locations
-VALUES (
-	1100,
-	'93091 Calle della Testa',
-	'10934',
-	'Venice',
-	NULL,
-	'IT'
-	);
-
-INSERT INTO locations
-VALUES (
-	1200,
-	'2017 Shinjuku-ku',
-	'1689',
-	'Tokyo',
-	'Tokyo Prefecture',
-	'JP'
-	);
-
-INSERT INTO locations
-VALUES (
-	1300,
-	'9450 Kamiya-cho',
-	'6823',
-	'Hiroshima',
-	NULL,
-	'JP'
-	);
-
-INSERT INTO locations
-VALUES (
-	1400,
-	'2014 Jabberwocky Rd',
-	'26192',
-	'Southlake',
-	'Texas',
-	'US'
-	);
-
-INSERT INTO locations
-VALUES (
-	1500,
-	'2011 Interiors Blvd',
-	'99236',
-	'South San Francisco',
-	'California',
-	'US'
-	);
-
-INSERT INTO locations
-VALUES (
-	1600,
-	'2007 Zagora St',
-	'50090',
-	'South Brunswick',
-	'New Jersey',
-	'US'
-	);
-
-INSERT INTO locations
-VALUES (
-	1700,
-	'2004 Charade Rd',
-	'98199',
-	'Seattle',
-	'Washington',
-	'US'
-	);
-
-INSERT INTO locations
-VALUES (
-	1800,
-	'147 Spadina Ave',
-	'M5V 2L7',
-	'Toronto',
-	'Ontario',
-	'CA'
-	);
-
-INSERT INTO locations
-VALUES (
-	1900,
-	'6092 Boxwood St',
-	'YSW 9T2',
-	'Whitehorse',
-	'Yukon',
-	'CA'
-	);
-
-INSERT INTO locations
-VALUES (
-	2000,
-	'40-5-12 Laogianggen',
-	'190518',
-	'Beijing',
-	NULL,
-	'CN'
-	);
-
-INSERT INTO locations
-VALUES (
-	2100,
-	'1298 Vileparle (E)',
-	'490231',
-	'Bombay',
-	'Maharashtra',
-	'IN'
-	);
-
-INSERT INTO locations
-VALUES (
-	2200,
-	'12-98 Victoria Street',
-	'2901',
-	'Sydney',
-	'New South Wales',
-	'AU'
-	);
-
-INSERT INTO locations
-VALUES (
-	2300,
-	'198 Clementi North',
-	'540198',
-	'Singapore',
-	NULL,
-	'SG'
-	);
-
-INSERT INTO locations
-VALUES (
-	2400,
-	'8204 Arthur St',
-	NULL,
-	'London',
-	NULL,
-	'UK'
-	);
-
-INSERT INTO locations
-VALUES (
-	2500,
-	'Magdalen Centre, The Oxford Science Park',
-	'OX9 9ZB',
-	'Oxford',
-	'Oxford',
-	'UK'
-	);
-
-INSERT INTO locations
-VALUES (
-	2600,
-	'9702 Chester Road',
-	'09629850293',
-	'Stretford',
-	'Manchester',
-	'UK'
-	);
-
-INSERT INTO locations
-VALUES (
-	2700,
-	'Schwanthalerstr. 7031',
-	'80925',
-	'Munich',
-	'Bavaria',
-	'DE'
-	);
-
-INSERT INTO locations
-VALUES (
-	2800,
-	'Rua Frei Caneca 1360 ',
-	'01307-002',
-	'Sao Paulo',
-	'Sao Paulo',
-	'BR'
-	);
-
-INSERT INTO locations
-VALUES (
-	2900,
-	'20 Rue des Corps-Saints',
-	'1730',
-	'Geneva',
-	'Geneve',
-	'CH'
-	);
-
-INSERT INTO locations
-VALUES (
-	3000,
-	'Murtenstrasse 921',
-	'3095',
-	'Bern',
-	'BE',
-	'CH'
-	);
-
-INSERT INTO locations
-VALUES (
-	3100,
-	'Pieter Breughelstraat 837',
-	'3029SK',
-	'Utrecht',
-	'Utrecht',
-	'NL'
-	);
-
-INSERT INTO locations
-VALUES (
-	3200,
-	'Mariano Escobedo 9991',
-	'11932',
-	'Mexico City',
-	'Distrito Federal,',
-	'MX'
-	);
 
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
-INSERT INTO departments
-VALUES (
-	10,
-	'Administration',
-	200,
-	1700
-	);
+INSERT INTO departments VALUES 
+(10,'Administration',200,1700),
+(20,'Marketing',201,1800),
+(30,'Purchasing',114,1700),
+(40,'Human Resources',203,2400),
+(50,'Shipping',121,1500),
+(60,'IT',103,1400),
+(70,'Public Relations',204,2700),
+(80,'Sales',145,2500),
+(90,'Executive',100,1700),
+(100,'Finance',108,1700),
+(110,'Accounting',205,1700),
+(120,'Treasury',NULL,1700),
+(130,'Corporate Tax',NULL,1700),
+(140,'Control And Credit',NULL,1700),
+(150,'Shareholder Services',NULL,1700),
+(160,'Benefits',NULL,1700),
+(170,'Manufacturing',NULL,1700),
+(180,'Construction',NULL,1700),
+(190,'Contracting',NULL,1700),
+(200,'Operations',NULL,1700),
+(210,'IT Support',NULL,1700),
+(220,'NOC',NULL,1700),
+(230,'IT Helpdesk',NULL,1700),
+(240,'Government Sales',NULL,1700),
+(250,'Retail Sales',NULL,1700),
+(260,'Recruiting',NULL,1700),
+(270,'Payroll',NULL,1700);
 
-INSERT INTO departments
-VALUES (
-	20,
-	'Marketing',
-	201,
-	1800
-	);
-
-INSERT INTO departments
-VALUES (
-	30,
-	'Purchasing',
-	114,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	40,
-	'Human Resources',
-	203,
-	2400
-	);
-
-INSERT INTO departments
-VALUES (
-	50,
-	'Shipping',
-	121,
-	1500
-	);
-
-INSERT INTO departments
-VALUES (
-	60,
-	'IT',
-	103,
-	1400
-	);
-
-INSERT INTO departments
-VALUES (
-	70,
-	'Public Relations',
-	204,
-	2700
-	);
-
-INSERT INTO departments
-VALUES (
-	80,
-	'Sales',
-	145,
-	2500
-	);
-
-INSERT INTO departments
-VALUES (
-	90,
-	'Executive',
-	100,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	100,
-	'Finance',
-	108,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	110,
-	'Accounting',
-	205,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	120,
-	'Treasury',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	130,
-	'Corporate Tax',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	140,
-	'Control And Credit',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	150,
-	'Shareholder Services',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	160,
-	'Benefits',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	170,
-	'Manufacturing',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	180,
-	'Construction',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	190,
-	'Contracting',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	200,
-	'Operations',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	210,
-	'IT Support',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	220,
-	'NOC',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	230,
-	'IT Helpdesk',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	240,
-	'Government Sales',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	250,
-	'Retail Sales',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	260,
-	'Recruiting',
-	NULL,
-	1700
-	);
-
-INSERT INTO departments
-VALUES (
-	270,
-	'Payroll',
-	NULL,
-	1700
-	);
 
 SET FOREIGN_KEY_CHECKS = 1;
 
